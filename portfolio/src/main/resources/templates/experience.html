@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bo Vannrith | Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --accent-blue: #00A3FF;
+            --bg-dark: #0f0f0f;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: white;
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            overflow-x: hidden;
+            /* Grainy Background Effect */
+            background-image: 
+                radial-gradient(circle at 20% 30%, rgba(0, 163, 255, 0.15), transparent 40%),
+                radial-gradient(circle at 80% 70%, rgba(147, 51, 234, 0.15), transparent 40%);
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            padding: 2rem 0;
+        }
+
+        .nav-link {
+            color: rgba(255, 255, 255, 0.7) !important;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: 0.3s;
+        }
+
+        .nav-link:hover, .nav-link.active-custom {
+            color: var(--accent-blue) !important;
+        }
+
+        .nav-item.active-bg {
+            background-color: var(--accent-blue);
+            color: black !important;
+            padding: 5px 15px;
+        }
+
+        .active-bg .nav-link {
+            color: black !important;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin-left: 200px;   /* move content left */
+        }
+
+        /* Hero Section */
+        .year-outline {
+            font-size: 8rem;
+            font-weight: 800;
+            color: transparent;
+            -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
+            text-align: right;
+            line-height: 1;
+        }
+
+        /* Section Titles */
+        .experience-header {
+            font-size: 3rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        .blue-bar {
+            width: 220px;
+            height: 5px;
+            background-color: var(--accent-blue);
+            margin-bottom: 50px;
+        }
+
+        /* Experience Rows */
+        .exp-row { margin-bottom: 4rem; }
+        .icon-box {
+            font-size: 2rem;
+            color: var(--accent-blue);
+            padding-top: 5px;
+        }
+        .job-title { font-size: 1.4rem; font-weight: 700; margin-bottom: 5px; }
+        .job-duration { color: var(--text-gray); font-size: 1.1rem; margin-bottom: 0; }
+        .job-desc {
+            color: var(--text-gray);
+            font-size: 0.95rem;
+            line-height: 1.7;
+            border-left: 1px solid rgba(255,255,255,0.1);
+            padding-left: 20px;
+        }
+        /* Decorative Lines */
+        .bottom-line {
+            border-bottom: 2px solid rgba(255,255,255,0.2);
+            position: relative;
+            margin-top: 50px;
+        }
+
+        .dot {
+            height: 10px;
+            width: 10px;
+            background-color: white;
+            border-radius: 50%;
+            display: inline-block;
+            position: absolute;
+            left: 0;
+            top: -5px;
+        }
+
+        .year-text {
+            float: right;
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+            color: rgba(255,255,255,0.8);
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav gap-4 align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="/">Home Page</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/about">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/education">Education</a></li>
+                    <li class="nav-item active-bg"><a class="nav-link" href="/experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/project">Project</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/skill">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+        <div class="container flex-grow-1">
+        <div class="year-outline">2023 - 2026</div>
+
+        <h2 class="experience-header">EXPERIENCE</h2>
+        <div class="blue-bar"></div>
+
+        <div class="row exp-row align-items-start">
+            <div class="col-md-1 icon-box text-center">
+                <i class="fas fa-angles-right"></i>
+            </div>
+            <div class="col-md-4">
+                <h3 class="job-title">Internship Experience</h3>
+                <p class="job-duration">Video Editor for 6 months</p>
+            </div>
+            <div class="col-md-7">
+                <p class="job-desc">
+                    I completed a 6-month internship as a video editor. During this time, I worked on editing videos, 
+                    organizing media files, and meeting project deadlines. I also learned how to cooperate 
+                    with teammates, receive feedback, and improve my creativity and technical skills in video production.
+                </p>
+            </div>
+        </div>
+
+        <div class="row exp-row align-items-start">
+            <div class="col-md-1 icon-box text-center">
+                <i class="fas fa-angles-right"></i>
+            </div>
+            <div class="col-md-4">
+                <h3 class="job-title">Full-Time Job</h3>
+                <p class="job-duration">Work in motor shop for 3 years</p>
+            </div>
+            <div class="col-md-7">
+                <p class="job-desc">
+                    I am currently working full-time in a motor shop. My responsibilities include assisting customers, 
+                    supporting daily operations, and helping with product or service inquiries. This job has 
+                    helped me develop strong communication skills, customer service experience, and workplace responsibility.
+                </p>
+            </div>
+        </div>
+        </div>
+
+    <div class="container mt-5">
+        <div class="bottom-line">
+            <span class="dot"></span>
+            <span class="year-text">PORTFOLIO 2026</span>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Simple script to handle active states or animations
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function() {
+                document.querySelector('.active-bg')?.classList.remove('active-bg');
+                this.parentElement.classList.add('active-bg');
+            });
+        });
+    </script>
+</body>
+</html>
